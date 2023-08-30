@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="misEstilos.css">
+        <script src="calcu.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form class="formacal">
+        <h1>CALCULADORA</h1>
+        <input type="text" id="campo1">        
+        <input type="text" id="campo2">
+        <br/>
+        <br/>
+        <button onclick="suma()">+</button>
+        <button onclick="resta()">-</button>        
+        <button onclick="multiplicacion()">x</button>               
+        <button onclick="division()">/</button>
+        <br/>
+        <div class="doble">
+            <button onclick="raiz()">RAÍZ</button>
+            <button onclick="potencia()">POTENCIA</button>
+            <br/>        
+            <button onclick="absoluto()">ABSOLUTO</button>                
+            <button onclick="aleatorio()">RANDOM</button>
+        </div>
+        <h3>RESULTADO</h3>
+        <input type="text" id="resultado">
+        <br/>
+        <br/>
+        <div class="triple">
+            <button onclick="redondeo()">ROUND</button>
+            <button onclick="piso()">FLOOR</button>
+            <button onclick="techo()">CEIL</button>
+        </div>
+    </form>
+    </body>
+</html>
